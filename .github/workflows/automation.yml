@@ -16,7 +16,7 @@ jobs:
             - name: Bahamut Automation
               uses: JacobLinCool/Bahamut-Automation@v0.6.13
               with:
-                  modules: "login,ad_handler,sign,answer,discord,lottery,logout,discord"
+                  modules: "login,ad_handler,sign,answer,lottery,logout,discord"
                   parameters: ${{ secrets.parameters || '{}' }}
                   secrets: ${{ secrets.secrets }}
 
