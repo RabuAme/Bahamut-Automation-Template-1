@@ -5,8 +5,8 @@ shared:
 # 使用的模組及其參數，可以是內建的模組或是自製模組的路徑
 modules:
     # 註冊一些通用函式到 shared
-    report:
-        only_failed: false
+    #report:
+        #only_failed: false
     ad_handler:
 
     # 主要功能模組
@@ -15,7 +15,7 @@ modules:
         password: $password
         # twofa: $twofa
     sign:
-    guild:
+    #guild:
     answer:
     lottery:
         max_attempts: 5 # 每個最多嘗試 20 次
