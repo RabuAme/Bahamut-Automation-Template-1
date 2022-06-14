@@ -10,7 +10,7 @@ modules:
     ad_handler:
 
     # 主要功能模組
-    login:
+    login_v2:
         username: $username
         password: $password
         # twofa: $twofa
