@@ -1,11 +1,11 @@
-name: 自動化
+name: 自動化-簽到-答題
 
 on:
     schedule:
         - cron: "0 5,17 * * *"
-        - cron: "0 1,13 * * *"
+        #- cron: "0 1,13 * * *"
     workflow_dispatch:
-
+    
 jobs:
     automation:
         name: 自動化
@@ -16,8 +16,7 @@ jobs:
             - name: Bahamut Automation
               uses: JacobLinCool/Bahamut-Automation@action
               with:
-                  modules: "login,ad_handler,sign,answer,lottery,logout,discord"
-                  parameters: ${{ secrets.parameters || '{}' }}
+                  config: "config.yml"
                   secrets: ${{ secrets.secrets }}
 
             - uses: gautamkrishnar/keepalive-workflow@master
