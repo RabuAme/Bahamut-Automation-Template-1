@@ -1,0 +1,22 @@
+name: 自動化-抽獎
+
+on:
+    schedule:
+        - cron: "10 5,17 * * *"
+        - cron: "0 1,13 * * *"
+    workflow_dispatch:
+    
+jobs:
+    automation:
+        name: 自動化
+        runs-on: macos-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Bahamut Automation
+              uses: JacobLinCool/Bahamut-Automation@action
+              with:
+                  config: "config2.yml"
+                  secrets: ${{ secrets.secrets }}
+
+            - uses: gautamkrishnar/keepalive-workflow@master
