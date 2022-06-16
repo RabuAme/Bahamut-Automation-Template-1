@@ -6,7 +6,7 @@ shared:
 modules:
     # 註冊一些通用函式到 shared
     report:
-        only_failed: false
+        only_failed: true
     ad_handler:
 
     # 主要功能模組
