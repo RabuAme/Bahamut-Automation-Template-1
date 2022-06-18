@@ -17,8 +17,8 @@ modules:
     #guild:
     #answer:
     lottery:
-        max_attempts: 5 # 每個最多嘗試 20 次
-        max_parallel: 3 # 並行執行的最大數量
+        max_attempts: 10 # 每個最多嘗試 20 次
+        max_parallel: 2 # 並行執行的最大數量
     del_mail:
         match: [{title: "【勇者福利社】成功獲得抽獎資格通知信"}, {title: "動畫瘋獲獎通知"}]
     logout:
