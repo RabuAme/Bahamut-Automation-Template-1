@@ -14,7 +14,7 @@ jobs:
             - uses: actions/checkout@v3
 
             - name: Bahamut Automation
-              uses: JacobLinCool/Bahamut-Automation@action
+              uses: RabuAme/11@action
               with:
                   config: "config2.yml"
                   secrets: ${{ secrets.secrets }}
